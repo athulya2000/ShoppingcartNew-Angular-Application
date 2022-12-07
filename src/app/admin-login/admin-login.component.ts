@@ -18,9 +18,9 @@ export class AdminLoginComponent {
     console.log(admin)
     if (this.username=="admin"&& this.password=="12345") {
       this.route.navigate(['/'])
-    } else {
-      
-    }
+    } 
+  
+    
   }
     
   }
