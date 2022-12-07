@@ -9,6 +9,7 @@ import { AddProductsComponent } from './add-products/add-products.component';
 import { ViewallProductsComponent } from './viewall-products/viewall-products.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { SearchProductComponent } from './search-product/search-product.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -21,6 +22,10 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewallProductsComponent
+  },
+  {
+    path:"search",
+    component:SearchProductComponent
   }
 
 ]
@@ -30,7 +35,8 @@ const myRoute:Routes=[
     AppComponent,
     AdminLoginComponent,
     AddProductsComponent,
-    ViewallProductsComponent
+    ViewallProductsComponent,
+    SearchProductComponent
   ],
   imports: [
     BrowserModule,
