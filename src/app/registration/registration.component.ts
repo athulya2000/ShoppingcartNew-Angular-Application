@@ -23,6 +23,17 @@ export class RegistrationComponent {
     this.api.addRegistration(data).subscribe(
       (response:any)=>{
         console.log(response)
+        if (response.status=="success") {
+          alert("Registration is successfull")
+          this.name=""
+          this.address=""
+          this.phoneno=""
+          this.emailid=""
+          this.password=""
+          this.confirmpassword=""
+        } else {
+          alert("something went wrong")
+        }
       }
     )
   }

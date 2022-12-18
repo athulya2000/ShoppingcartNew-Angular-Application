@@ -1,33 +1,25 @@
-<style>
-    .bgm{background-image:url('https://wallpaperaccess.com/full/4893706.jpg') ;}
-</style>
-<div class="bgm" style="height:700px">
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
+                
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <h1 style="color:blue" text-centre>ADMIN LOGIN</h1>
+                    <label for="" class="form-label">Email Id</label>
+                    <input type="email" name="emailid" [(ngModel)]="emailid" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label">Username</label>
-                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
-                </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label"></label>
+                    <label for="" class="form-label">Password</label>
                     <input name="password" [(ngModel)]="password" type="password" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <button (click)="readValues()" class="btn btn-warning">Login</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <a routerLink="/userlogin">Click here for Userlogin</a>
+                    <a routerLink="/registration">Click here for Usersignup</a>
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <a routerLink="/registration">Click here for UserSignup</a>
-                </div>
+                
             </div>
         </div>
     </div>
 </div>
-</div>
+
