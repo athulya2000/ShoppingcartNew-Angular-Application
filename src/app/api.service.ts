@@ -20,4 +20,11 @@ export class ApiService {
   addRegistration=(dataToSend:any)=>{
      return this.http.post("http://localhost:8080/registration",dataToSend)
   }
+  userLogin=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/validitity",dataToSend)
+  }
+  getProfileDetails=(data:any)=>{
+    return this.http.post("http://localhost:8080/userinfo",data)
+  }
+ 
 }

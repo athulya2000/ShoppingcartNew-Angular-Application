@@ -22,6 +22,11 @@ export class AddProductsComponent {
     this.api.addProducts(data).subscribe(
       (response:any)=>{
         console.log(response)
+       if (response.status=="success") {
+        alert("product added successfully")
+       } else {
+        alert("something went wrong")
+       }
       }
     )
   }
